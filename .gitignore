@@ -6,3 +6,4 @@ server/server.log
 dist/
 .cache/
 *.local
+*.log

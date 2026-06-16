@@ -60,4 +60,8 @@ async function seed() {
   console.log('=== Seed complete ===');
 }
 
-seed().catch(err => { console.error('Seed failed:', err); process.exit(1); });
+if (require.main === module) {
+  seed().catch(err => { console.error('Seed failed:', err); process.exit(1); });
+}
+
+module.exports = { seed };

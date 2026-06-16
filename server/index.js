@@ -1,17 +1,25 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
+const path = require('path');
+const fs = require('fs');
 const morgan = require('morgan');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const { init, getDb, queryAll, queryOne, run, insert } = require('./db');
 const { calculateDeal, matchInvestors, generateSummary } = require('./scoring');
+const { seed } = require('./seed');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
 const JWT_SECRET = process.env.JWT_SECRET || 'ppai-faithfulord-2025';
 
-app.use(cors({ origin: ['http://localhost:5173', 'http://localhost:4173', 'http://127.0.0.1:5173'], credentials: true }));
+const clientDist = path.join(__dirname, '..', 'client', 'dist');
+if (fs.existsSync(clientDist)) {
+  app.use(express.static(clientDist));
+}
+
+app.use(cors());
 app.use(express.json());
 app.use(morgan('dev'));
 
@@ -222,8 +230,22 @@ app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', app: 'PropertyPilot AI', version: '2.0.0', creator: 'Faithfulord', agency: 'Faith Growth Agency' });
 });
 
+// SPA catch-all — serve index.html for any non-API route
+if (fs.existsSync(clientDist)) {
+  app.get('*', (req, res) => {
+    if (!req.path.startsWith('/api')) {
+      res.sendFile(path.join(clientDist, 'index.html'));
+    }
+  });
+}
+
 async function start() {
   await init();
+  const count = queryOne('SELECT COUNT(*) as c FROM property_leads');
+  if (!count || count.c === 0) {
+    console.log('Database empty — running seed...');
+    await seed();
+  }
   app.listen(PORT, () => {
     console.log(`PropertyPilot AI Server running on http://localhost:${PORT}`);
     console.log(`Creator: Faithfulord — Faith Growth Agency`);

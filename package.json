@@ -1,0 +1,16 @@
+{
+  "name": "propertypilot-ai",
+  "version": "2.0.0",
+  "private": true,
+  "description": "PropertyPilot AI — AI-Powered Property Intelligence Platform by Faithfulord",
+  "scripts": {
+    "install:all": "cd server && npm install && cd ../client && npm install",
+    "dev": "concurrently \"cd server && node index.js\" \"cd client && npx vite --host\"",
+    "seed": "cd server && node seed.js",
+    "start": "cd server && node index.js",
+    "build": "cd client && npx vite build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

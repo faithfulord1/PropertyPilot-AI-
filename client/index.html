@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PropertyPilot AI™ — by Faithfulord | Faith Growth Agency</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏘</text></svg>" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --navy: #0D1B3E; --navy-mid: #142854; --navy-light: #1D3A6B;
+      --gold: #C9A84C; --gold-light: #E8C97A; --gold-pale: #FBF4E3;
+      --teal: #1A7F8E; --teal-light: #2BA5B8; --teal-pale: #E3F5F7;
+      --green: #1E8449; --green-pale: #EAF3DE;
+      --amber: #D4850D; --amber-pale: #FAEEDA;
+      --red: #C0392B; --red-pale: #FCEBEB;
+      --purple: #6B3FA0; --purple-pale: #F0EAFA;
+      --bg: #F0F2F7; --surface: #FFFFFF;
+      --border: #DDE1EC; --border-light: #ECEEF5;
+      --text: #0D1B3E; --text-mid: #445577; --text-muted: #7A87A8;
+      --shadow: 0 1px 3px rgba(13,27,62,.06), 0 4px 12px rgba(13,27,62,.06);
+      --shadow-hover: 0 4px 16px rgba(13,27,62,.12);
+      --radius: 10px; --radius-sm: 6px; --radius-lg: 14px;
+      --sidebar: 240px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg); color: var(--text); font-size: 14px; line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+    #root { min-height: 100vh; }
+    input, select, textarea, button { font-family: inherit; font-size: inherit; }
+    input, select, textarea {
+      padding: 8px 12px; border: 1px solid var(--border); border-radius: var(--radius-sm);
+      background: var(--surface); color: var(--text); outline: none; transition: border .15s;
+    }
+    input:focus, select:focus, textarea:focus { border-color: var(--gold); box-shadow: 0 0 0 3px rgba(201,168,76,.15); }
+    ::-webkit-scrollbar { width: 5px; height: 5px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #CBD0E0; border-radius: 10px; }
+    @media(max-width:768px) {
+      .hide-mobile { display: none !important; }
+    }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+    .animate-in { animation: fadeIn .35s ease-out; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+Match_ID,Deal_ID,Property_ID,Investor_ID,Investor_Name,Match_Score,Match_Reason,Sent_Date,Sent_Via,Investor_Response,Response_Date,Outcome,Fee_Agreed,Notes
+DM001,DA005,PL005,INV005,David Morrison,95,Flip specialist Sheffield. Budget match. Below 70% BMV.,2024-01-16,Email,Interested,2024-01-17,Completed,4995,Fastest match on record
+DM002,DA005,PL005,INV001,James Thornton,82,Cash buyer Yorkshire. BTL or flip. Budget fits.,2024-01-16,Email,Not Interested,2024-01-19,Declined,0,Preferred Leeds postcode
+DM003,DA007,PL007,INV002,Sarah Blackwell,91,Portfolio Birmingham. Budget matches. Relocation motivated.,2024-01-19,Email,Interested,2024-01-20,Completed,5995,Quick decision
+DM004,DA003,PL003,INV001,James Thornton,94,Leeds/Manchester cash buyer. Below market terrace.,2024-01-13,Email,Interested,2024-01-14,Completed,3995,Immediate interest
+DM005,DA006,PL006,INV006,Emma Walsh,96,SA specialist Leeds. City flat. Perfect match.,2024-01-18,Email,Interested,2024-01-19,Completed,2995,SA goldmine confirmed
+DM006,DA013,PL013,INV007,Robert Sinclair,78,Merseyside buyer. Derby within range.,2024-01-30,Email,Interested,2024-02-01,Completed,2995,Expanded area
+DM007,DA032,PL032,INV004,Rachel Patel,85,Nottingham BTL. Budget fits. First deal.,2024-03-01,Email,Interested,2024-03-03,Completed,2995,Investor very pleased
+DM008,DA032,PL032,INV033,Gary Stephens,80,Nottingham portfolio builder. Low budget.,2024-03-01,Email,Thinking,2024-03-05,Not Proceeded,0,Went with another deal
+DM009,DA024,PL024,INV013,Paul Henderson,87,Yorkshire BTL. Wakefield in area.,2024-02-20,Email,Interested,2024-02-21,Completed,2995,Yorkshire specialist
+DM010,DA027,PL027,INV024,Alison Turner,93,Hull/North cash buyer. Burnley deal exceptional yield.,2024-02-25,Email,Interested,2024-02-26,Completed,1995,Expanding north
+DM011,DA041,PL041,INV029,Joel Patterson,88,South Yorkshire. Worksop close enough.,2024-03-20,Email,Interested,2024-03-21,Completed,1995,Good rapport
+DM012,DA010,PL010,INV033,Gary Stephens,86,Nottingham flat probate. Low budget match.,2024-02-05,Email,Interested,2024-02-06,Completed,1995,Quick response
+DM013,DA017,PL017,INV015,Steven Abbott,90,HMO specialist Leeds. Back-to-back conversion.,2024-02-10,Email,Interested,2024-02-11,Completed,1995,HMO conversion planned
+DM014,DA017,PL017,INV046,Megan Horton,84,Leeds HMO specialist. Student market potential.,2024-02-10,Email,Not Interested,2024-02-13,Declined,0,Too small for HMO
+DM015,DA034,PL034,INV012,Amanda Foster,92,SA Manchester/Leicester. Flat divorce deal.,2024-03-10,Email,Interested,2024-03-11,Completed,2995,SA confirmed viable
+DM016,DA034,PL034,INV006,Emma Walsh,85,SA Leeds specialist. Leicester in range.,2024-03-10,Email,Not Interested,2024-03-13,Declined,0,Too far from base
+DM017,DA056,PL056,INV035,Barry Nolan,98,SA York/Harrogate specialist. York terrace ideal.,2024-04-15,Email,Interested,2024-04-15,Completed,2995,Same-day response
+DM018,DA056,PL056,INV049,Stuart Lang,72,Manchester SA. York possible.,2024-04-15,Email,No Response,,No Response,0,No reply after 2 chases
+DM019,DA065,PL065,INV021,Mark Davidson,88,Nottingham HMO. Terrace potential conversion.,2024-05-05,Email,Interested,2024-05-06,Completed,1995,HMO conversion viable
+DM020,DA064,PL064,INV029,Joel Patterson,91,Sheffield specialist cash buyer.,2024-05-08,Email,Interested,2024-05-09,Completed,1995,Loves Sheffield deals
+DM021,DA074,PL074,INV044,Iris Chambers,89,Sheffield cash buyer. Rotherham in patch.,2024-05-12,WhatsApp,Interested,2024-05-12,Completed,1995,WhatsApp deal done
+DM022,DA082,PL082,INV011,Christopher Barnes,93,Leeds premium buyer. Large budget. Semi-detached.,2024-05-22,Email,Interested,2024-05-22,Completed,4995,Top buyer engaged
+DM023,DA082,PL082,INV034,Hazel Simpson,85,Premium Leeds. Slightly smaller budget.,2024-05-22,Email,Not Interested,2024-05-25,Declined,0,Budget too tight
+DM024,DA053,PL053,INV019,Graham Butler,90,South Birmingham. Halesowen match.,2024-04-08,Email,Interested,2024-04-09,Completed,2995,Quick deal
+DM025,DA092,PL092,INV031,Derek Holt,94,Liverpool specialist. High-yield Merseyside.,2024-06-05,Email,Interested,2024-06-05,Under Offer,4995,Awaiting exchange
+DM026,DA031,PL031,INV039,Donald Carr,91,East Yorkshire budget deals. Hull terrace.,2024-04-03,Email,Interested,2024-04-04,Completed,1995,Consistent buyer
+DM027,DA043,PL043,INV043,Leonard Price,87,Merseyside portfolio. Hull acceptable.,2024-04-22,Email,Interested,2024-04-23,Completed,1995,Portfolio growth
+DM028,DA043,PL043,INV007,Robert Sinclair,82,Liverpool specialist. Hull adjacent.,2024-04-22,Email,Thinking,2024-04-26,Not Proceeded,0,Stayed in Merseyside
+DM029,DA070,PL070,INV041,Keith Owen,90,Leeds SA specialist. Nottingham considered.,2024-05-02,Email,Interested,2024-05-03,Completed,1995,SA flat Leeds alternative
+DM030,DA070,PL070,INV006,Emma Walsh,85,SA Leeds. Nottingham possible.,2024-05-02,Email,Not Interested,2024-05-05,Declined,0,Focused on Leeds only
+DM031,DA083,PL083,INV049,Stuart Lang,86,Manchester SA. Liverpool city flat.,2024-06-03,WhatsApp,Interested,2024-06-03,Under Offer,1995,WhatsApp response
+DM032,DA095,PL095,INV033,Gary Stephens,85,Nottingham/Mansfield. Hucknall on doorstep.,2024-06-10,Email,Interested,2024-06-10,Sent,1995,Awaiting decision
+DM033,DA098,PL098,INV024,Alison Turner,92,Hull specialist. Hull repossession excellent yield.,2024-06-11,Email,Interested,2024-06-11,Sent,1995,Fast response
+DM034,DA098,PL098,INV039,Donald Carr,88,East Yorks budget. Hull great fit.,2024-06-11,Email,Thinking,,Pending,0,Response awaited
+DM035,DA001,PL001,INV001,James Thornton,90,Leeds terrace cash buyer. Perfect match.,2024-01-10,Email,Not Interested,2024-01-12,Declined,0,Wanted more rooms
+DM036,DA002,PL002,INV002,Sarah Blackwell,88,Birmingham semi. Portfolio strategy.,2024-01-11,Email,Thinking,2024-01-16,Not Proceeded,0,Found other deal
+DM037,DA009,PL009,INV004,Rachel Patel,84,Nottingham BTL budget buyer.,2024-01-22,Email,Interested,2024-01-23,Completed,2995,Second deal together
+DM038,DA011,PL011,INV028,Lucy Hamilton,86,Yorkshire BTL portfolio builder. Wakefield semi.,2024-01-26,Email,Interested,2024-01-27,Completed,3995,Building to 20 units
+DM039,DA015,PL015,INV029,Joel Patterson,89,South Yorkshire. Rotherham deal.,2024-02-02,Email,Interested,2024-02-03,Completed,1995,Repossession specialist
+DM040,DA019,PL019,INV024,Alison Turner,88,Hull specialist. Hull probate.,2024-02-09,Email,Interested,2024-02-10,Completed,1995,Portfolio building Hull
+DM041,DA022,PL022,INV014,Karen Nguyen,85,High-end flip. Detached Stocksbridge potential.,2024-02-14,Email,Not Interested,2024-02-16,Declined,0,Too far north
+DM042,DA025,PL025,INV008,Linda Hussain,87,Birmingham probate semi. Portfolio buyer.,2024-02-18,Email,Interested,2024-02-19,Completed,4995,Expanding Birmingham
+DM043,DA026,PL026,INV021,Mark Davidson,84,Nottingham HMO specialist.,2024-02-20,Email,Interested,2024-02-21,Completed,1995,HMO plan confirmed
+DM044,DA028,PL028,INV007,Robert Sinclair,91,Liverpool specialist. Debt seller.,2024-02-24,Email,Interested,2024-02-24,Completed,1995,Same day deal
+DM045,DA029,PL029,INV013,Paul Henderson,83,Yorkshire BTL. Derby adjacent.,2024-02-26,Email,Thinking,2024-03-01,Not Proceeded,0,Preferred Yorkshire
+DM046,DA035,PL035,INV001,James Thornton,91,Leeds terrace. Relocation deal.,2024-03-07,Email,Interested,2024-03-07,Completed,2995,Consistent buyer
+DM047,DA038,PL038,INV004,Rachel Patel,86,Nottingham BTL. Flat deal.,2024-03-12,Email,Interested,2024-03-13,Completed,2995,Portfolio growing
+DM048,DA039,PL039,INV043,Leonard Price,88,Merseyside semi. Divorce deal.,2024-03-14,Email,Interested,2024-03-15,Completed,2995,Merseyside growth
+DM049,DA040,PL040,INV040,Heather Bridges,83,East Midlands HMO. Ilkeston detached.,2024-03-15,Email,Not Interested,2024-03-18,Declined,0,Prefers terraced
+DM050,DA042,PL042,INV048,Deborah Bowman,87,Premium West Midlands flip. Bromsgrove probate.,2024-03-19,Email,Interested,2024-03-19,Completed,4995,Large probate flip

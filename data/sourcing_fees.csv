@@ -1,0 +1,26 @@
+Fee_ID,Deal_ID,Property_ID,Investor_ID,Investor_Name,Agreed_Fee,VAT_Applicable,VAT_Amount,Total_Fee_Inc_VAT,Invoice_Number,Invoice_Date,Invoice_Status,Payment_Due_Date,Payment_Date,Payment_Status,Payment_Method,Fee_Type,Notes
+SF001,DA005,PL005,INV005,David Morrison,4995,No,0,4995,INV-2024-001,2024-02-15,Sent,2024-03-01,2024-02-28,Paid,BACS,Sourcing Fee,Paid on completion
+SF002,DA007,PL007,INV002,Sarah Blackwell,5995,No,0,5995,INV-2024-002,2024-02-18,Sent,2024-03-04,2024-03-03,Paid,BACS,Sourcing Fee,Paid prior to completion
+SF003,DA003,PL003,INV001,James Thornton,3995,No,0,3995,INV-2024-003,2024-02-20,Sent,2024-03-06,2024-03-05,Paid,Bank Transfer,Sourcing Fee,Quick completion
+SF004,DA013,PL013,INV007,Robert Sinclair,2995,No,0,2995,INV-2024-004,2024-03-05,Sent,2024-03-19,2024-03-18,Paid,BACS,Sourcing Fee,Clean deal
+SF005,DA032,PL032,INV004,Rachel Patel,2995,No,0,2995,INV-2024-005,2024-03-28,Sent,2024-04-11,2024-04-10,Paid,Bank Transfer,Sourcing Fee,First deal for investor
+SF006,DA024,PL024,INV013,Paul Henderson,2995,No,0,2995,INV-2024-006,2024-04-05,Sent,2024-04-19,2024-04-18,Paid,BACS,Sourcing Fee,Yorkshire deal
+SF007,DA041,PL041,INV029,Joel Patterson,1995,No,0,1995,INV-2024-007,2024-04-15,Sent,2024-04-29,2024-04-28,Paid,Bank Transfer,Sourcing Fee,Low budget deal
+SF008,DA065,PL065,INV021,Mark Davidson,1995,No,0,1995,INV-2024-008,2024-05-02,Sent,2024-05-16,2024-05-15,Paid,BACS,Sourcing Fee,HMO potential
+SF009,DA074,PL074,INV044,Iris Chambers,1995,No,0,1995,INV-2024-009,2024-05-10,Sent,2024-05-24,2024-05-23,Paid,Bank Transfer,Sourcing Fee,Sheffield deal
+SF010,DA082,PL082,INV011,Christopher Barnes,4995,No,0,4995,INV-2024-010,2024-05-20,Sent,2024-06-03,2024-06-02,Paid,BACS,Sourcing Fee,Premium Leeds deal
+SF011,DA053,PL053,INV019,Graham Butler,2995,No,0,2995,INV-2024-011,2024-05-25,Sent,2024-06-08,2024-06-07,Paid,BACS,Sourcing Fee,Birmingham deal
+SF012,DA092,PL092,INV031,Derek Holt,4995,No,0,4995,INV-2024-012,2024-06-05,Sent,2024-06-19,,Awaiting Payment,BACS,Sourcing Fee,Due on completion
+SF013,DA006,PL006,INV006,Emma Walsh,2995,No,0,2995,INV-2024-013,2024-02-28,Sent,2024-03-14,2024-03-13,Paid,Bank Transfer,Sourcing Fee,SA flat Leeds
+SF014,DA034,PL034,INV012,Amanda Foster,2995,No,0,2995,INV-2024-014,2024-04-10,Sent,2024-04-24,2024-04-23,Paid,BACS,Sourcing Fee,SA Leicester flat
+SF015,DA056,PL056,INV035,Barry Nolan,2995,No,0,2995,INV-2024-015,2024-05-15,Sent,2024-05-29,2024-05-28,Paid,Bank Transfer,Sourcing Fee,York SA near Minster
+SF016,DA070,PL070,INV041,Keith Owen,1995,No,0,1995,INV-2024-016,2024-05-22,Sent,2024-06-05,2024-06-04,Paid,BACS,Sourcing Fee,Nottingham SA flat
+SF017,DA083,PL083,INV049,Stuart Lang,1995,No,0,1995,INV-2024-017,2024-06-01,Sent,2024-06-15,,Awaiting Payment,Bank Transfer,Sourcing Fee,Liverpool SA flat
+SF018,DA027,PL027,INV024,Alison Turner,1995,No,0,1995,INV-2024-018,2024-03-20,Sent,2024-04-03,2024-04-02,Paid,BACS,Sourcing Fee,Burnley exceptional yield
+SF019,DA010,PL010,INV033,Gary Stephens,1995,No,0,1995,INV-2024-019,2024-03-01,Sent,2024-03-15,2024-03-14,Paid,Bank Transfer,Sourcing Fee,Flat probate deal
+SF020,DA017,PL017,INV015,Steven Abbott,1995,No,0,1995,INV-2024-020,2024-03-12,Sent,2024-03-26,2024-03-25,Paid,BACS,Sourcing Fee,Leeds back-to-back HMO
+SF021,DA031,PL031,INV039,Donald Carr,1995,No,0,1995,INV-2024-021,2024-04-02,Sent,2024-04-16,2024-04-15,Paid,Bank Transfer,Sourcing Fee,Hull yield play
+SF022,DA043,PL043,INV043,Leonard Price,1995,No,0,1995,INV-2024-022,2024-04-20,Sent,2024-05-04,2024-05-03,Paid,BACS,Sourcing Fee,Merseyside portfolio
+SF023,DA064,PL064,INV029,Joel Patterson,1995,No,0,1995,INV-2024-023,2024-05-05,Sent,2024-05-19,2024-05-18,Paid,Bank Transfer,Sourcing Fee,Sheffield estate agent
+SF024,DA095,PL095,INV033,Gary Stephens,1995,No,0,1995,INV-2024-024,2024-06-10,Draft,,,,Not Invoiced,BACS,Sourcing Fee,Awaiting exchange
+SF025,DA098,PL098,INV024,Alison Turner,1995,No,0,1995,INV-2024-025,2024-06-11,Draft,,,,Not Invoiced,Bank Transfer,Sourcing Fee,Hull deal in progress

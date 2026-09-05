@@ -1,0 +1,51 @@
+name: PropertyPilot CI
+
+on:
+  push:
+    branches: [main, "hardening/**"]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: |
+            client/package-lock.json
+            server/package-lock.json
+
+      - name: Install server
+        run: npm ci --prefix server
+
+      - name: Install client
+        run: npm ci --prefix client
+
+      - name: Build client
+        run: npm run build --prefix client
+
+      - name: Smoke-test scoring engine
+        run: |
+          node - <<'NODE'
+          const { calculateDeal } = require('./server/scoring');
+          const result = calculateDeal({ purchasePrice: 200000, gdv: 250000, monthlyRent: 1400, refurbCost: 10000 });
+          if (!Number.isFinite(result.roi) || !Number.isFinite(result.score)) process.exit(1);
+          console.log(result);
+          NODE
+
+      - name: Install MCP dependencies
+        run: npm install --prefix mcp-server
+
+      - name: Build MCP server
+        run: npm run build --prefix mcp-server

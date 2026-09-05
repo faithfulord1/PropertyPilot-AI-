@@ -1,15 +1,16 @@
 {
   "name": "propertypilot-ai",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "private": true,
-  "description": "PropertyPilot AI — AI-Powered Property Intelligence Platform by Faithfulord",
+  "description": "PropertyPilot AI - governed property intelligence and deal-analysis platform by Faith Wright",
   "scripts": {
     "dev": "concurrently \"cd server && node index.js\" \"cd client && npx vite --host\"",
     "seed": "cd server && node seed.js",
-    "build": "cd client && npm install && npx vite build",
+    "build": "npm ci --prefix server && npm ci --prefix client && npm run build --prefix client",
     "start": "node server/index.js",
-    "install:server": "cd server && npm install",
-    "install:client": "cd client && npm install"
+    "install:server": "npm ci --prefix server",
+    "install:client": "npm ci --prefix client",
+    "check": "npm run build && node -e \"const { calculateDeal } = require('./server/scoring'); const r = calculateDeal({purchasePrice:200000,gdv:250000,monthlyRent:1400}); if (!Number.isFinite(r.roi)) process.exit(1); console.log(r);\""
   },
   "devDependencies": {
     "concurrently": "^8.2.2"

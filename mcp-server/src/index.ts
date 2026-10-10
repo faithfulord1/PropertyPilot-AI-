@@ -26,8 +26,15 @@ function analyseDeal(input: DealInput) {
   const grossYield = input.purchasePrice > 0 ? ((monthlyRent * 12) / input.purchasePrice) * 100 : 0;
   const margin = input.gdv > 0 ? ((input.gdv - input.purchasePrice) / input.gdv) * 100 : 0;
   const concerns: string[] = [];
-  if (roi < 10) concerns.push('Projected ROI is below 10%.');
-  if (grossYield > 0 && grossYield < 5) concerns.push('Projected gross yield is below 5%.');
+  const assumptions = [
+    ...(input.legalFees === undefined ? ['Legal fees use an illustrative £2,500 placeholder.'] : []),
+    ...(input.financeCosts === undefined ? ['Finance costs use an illustrative £5,000 placeholder.'] : []),
+    ...(input.stampDuty === undefined ? ['Stamp duty is excluded because no amount was supplied.'] : []),
+    ...(input.refurbCost === undefined ? ['Refurbishment cost is excluded because no amount was supplied.'] : []),
+    ...(input.monthlyRent === undefined ? ['Rent was not supplied; gross yield is unavailable.'] : []),
+  ];
+  if (roi < 10) concerns.push('Projected ROI is below the illustrative 10% screening threshold.');
+  if (grossYield > 0 && grossYield < 5) concerns.push('Projected gross yield is below the illustrative 5% screening threshold.');
   if (input.gdv <= input.purchasePrice) concerns.push('GDV does not exceed the purchase price.');
   if (refurbCost > input.purchasePrice * 0.25) concerns.push('Refurbishment cost exceeds 25% of purchase price.');
 
@@ -35,9 +42,10 @@ function analyseDeal(input: DealInput) {
     totalInvestment: Math.round(totalInvestment),
     projectedProfit: Math.round(profit),
     roiPercent: Math.round(roi * 100) / 100,
-    grossYieldPercent: Math.round(grossYield * 100) / 100,
+    grossYieldPercent: input.monthlyRent === undefined ? null : Math.round(grossYield * 100) / 100,
     purchaseToGdvMarginPercent: Math.round(margin * 100) / 100,
     concerns,
+    assumptions,
     governance: 'Analysis only. Independently verify valuation, costs, finance, tax and legal assumptions before acting.',
   };
 }
